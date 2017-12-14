@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <link rel = "stylesheet" href = "css/material.css">
+        <script src="js/materialize.min.js" type="text/javascript"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="js/index.js" type="text/javascript"></script>
+        <title>Manual HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" data-activates="menu-lateral" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+                <a href="#!" class="brand-logo" >Manual HTML5</a>
+                <ul id="menu-lateral" class="side-nav collapsible">
+                    <li class="white"><a href="#!" id="menu_main">Inicio</a></li>
+                    <li class="white">
+                        <a class="collapsible-header">HTML5<i class="material-icons"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!" id="menu_estructura">Estructura básica</a></li>
+                                <li><a href="#!" id="menu_formato">Formato de texto</a></li>
+                                <li><a href="#!" id="menu_semanticas">Etiquetas semanticas</a></li>
+                                <li><a href="#!" id="menu_listas">Listas</a></li>
+                                <li><a href="#!" id="menu_tablas">Tablas</a></li>
+                                <li><a href="#!" id="menu_cajas">Modelo de cajas</a></li>
+                                <li><a href="#!" id="menu_formularios">Formularios</a></li>
+                                <li><a href="#!" id="menu_enlaces">Enlaces</a></li>
+                                <li><a href="#!" id="menu_multimedia">Multimedia</a></li>
+                                <li><a href="#!" id="menu_canvas">Canvas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="white">
+                        <a class="collapsible-header">Accesibilidad<i class="material-icons"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!" id="menu_WCAG">WCAG</a></li>
+                                <li><a href="#!" id="menu_legales">Normativa</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#!" id="menu_creditos">Sobre esta aplicación</a></li>
+                    <li><a href="#!" id="menu_ayuda">Manual usuario</a></li>
+                    <li><a href="#!" id="menu_error">Posibles errores encontrados</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            
+            <div id="panel_main" class="panel" hidden>
+                <body>
+                        <IMG SRC="imagenes/html.jpg">
+                    <h4>Bienvenido a nuestro proyecto de pagina web. Somos un grupo de 4 estudiantes con un objetivo bastante simple, hacer una página web que sirve tanto de manual o guía para 
+                    aquellos que estén empezando con HTML5, e instruirnos nosotros mismos dentro de este lenguaje al realizar esta página.<br/><br/>
+
+                    <font color="blue">Puede que a primera vista no parezca una página muy profesional, ni tampoco un manual definitivo que resolverá todas tus dudas sobre este lenguaje, pero nuestra intención no es esa, sino 
+                    conseguir que a la misma vez que nosotros, aprendemos, vosotros lo consigais tambien.</font></h4>
+                    <br/><br/><br/>
+                    Un saludo de parte del equipo de desarrollo de la página.
+                </body>
+            </div>
+            <!-- HTML5 -->
+            <div id="panel_estructura" class="panel" hidden>
+                <h2><font color="#FF7F50">Estructura Básica</font></h2><br/><br/>
+                
+                <body>
+                    <h2><font color="#FF7F50">DOCTYPE</font></h2>
+                    <hr color="#FF7F50">
+                    <p>El documento tiene que empezar con la etiqueta <strong>&lt;!DOCTYPE html&gt;</strong> para definir el documento que es.</p>
+                    <h2><font color="#FF7F50">HTML</font></h2>
+                    <hr color="#FF7F50">
+                    <p>El siguiente paso es abrir el documento html con la etiqueta <strong>&lt;html lang="es"&gt;</strong>. El atributo lang sirve para hacer referencia al lenguaje empleado, en nuestro caso "es".</p>
+                    <h2><font color="#FF7F50">HEAD</font></h2>
+                    <hr color="#FF7F50">
+                    <p>Ahora hay que definir la cabecera del documento con la etiqueta <strong>&lt;head&gt;</strong></p>
+                    <p>Dentro de <strong>&lt;head&gt;</strong> debe contenerse la etiqueta <strong>&lt;meta charset="UTF-8"&gt;</strong> para definir la codificación del documento haciendo referencia con el atributo charset. También debe ir la etiqueta <strong>&lt;title&gt;</strong> para especificar el título del documento, el cuál aparecerá en la barra del navegador. </p>
+                    <h2><font color="#FF7F50">BODY</font></h2>
+                    <hr color="#FF7F50">
+                    <p>Por último, hay que definir el cuerpo de la página, es decir, el contenido visible en el navegador. Para ello utilizamos la etiqueta <strong>&lt;body&gt;</strong></p>
+                    <br/>
+                    <p>De manera que la estructura debe quedar así:</p>
+                    <p><strong>&lt;!DOCTYPE html&gt;</strong></p>
+                    <p><strong>&lt;html lang="es"&gt;</strong></p>
+                    <p>&nbsp;<strong>&lt;head&gt;</strong></p>
+                    <p>&nbsp;&nbsp;<strong>&lt;meta charset="UTF-8"&gt;</strong></p>
+                    <p>&nbsp;&nbsp;<strong>&lt;title&gt;</strong><strong>&lt;/title&gt;</strong></p>
+                    <p>&nbsp;<strong>&lt;/head&gt;</strong></p>
+                    <p>&nbsp;<strong>&lt;body&gt;</strong><strong>&lt;/body&gt;</strong> </p>
+                    <p><strong>&lt;/html&gt;</strong></p>
+                </body>
+            </div>
+
+            <div id="panel_formato" class="panel" hidden>
+                <body>
+                    
+                        <title> 3.2 Formatos de Texto</title>	
+                     
+                     
+                         <h1><font color="#FF7F50">Etiquetas de formato del texto</font></h1>
+                         <hr color="#FF7F50">
+                         <p><strong><font color="blue">En HTML5 existen diferentes tipos de etiquetas que pueden modificar el estilo y estructura del texto, entre ellas vamos a destacar las siguientes :
+                        </font></strong></p>
+                        
+                        <h2><font color="#FF7F50">La etiqueta &lt;strong&gt; </font></h2>
+                        <hr color="#FF7F50">
+                        <p>Esta etiqueta nos permite modificar el texto para que se muestre en negrita, tan solo tenemos
+                            que poner &lt;strong&gt; delante del texto, y cerrarlo despues.<br>
+                            ejemplo : <strong>este texto esta en negrita</strong>
+                        </p>
+                        
+                        <h2><font color="#FF7F50">La etiqueta &lt;hr&gt;</font></h2>
+                        <hr color="#FF7F50">
+                        <p>La función de esta etiqueta es muy simple. Coloca una línea de separación entre un texto y el siguiente. 
+                            Si no tiene texto comprendido entre ella se cierra directamente con &lt;hr/&gt; <br>
+                            ej: este texto </p><hr> esta separado por una línea.
+                        <p></p>
+                
+                        <h2><font color="#FF7F50">La etiqueta &lt;i&gt;</font></h2>
+                        <hr color="#FF7F50">
+                        <p>La función de esta etiqueta es la de transformar el texto en cursiva.<br>
+                        ejemplo : <i>este texto esta en cursiva</i></p>
+                
+                    <h1><font color="#FF7F50">Estilos</font></h1>
+                    <hr color="#FF7F50">
+                            <p>En HTML5 se suele dividir contenido y apariencia. Esta ultima se hace con <strong>CSS</strong> , un estandar que nos permite modificar
+                               todos los elementos que requerimos para modificar la aparencia de nuestra pagina web. <br>
+                               Utilizando CSS podemos aplicar los estilos de tres formas diferentes : <br>
+                               </p><ul>
+                                    <li type="circle"><font color="blue">Estilos en un archivo externo</font> : definimos reglas de CSS en un archivo que enlazamos en la cabecera de nuestra página.<br>
+                                    </li><li type="circle"><font color="blue">Estilos en la cabecera de la pagina web</font> : Indicamos en la cabecera de la pagina las reglas de CSS, pero estas solo afectaran a esa pagina.<br>
+                                    </li><li type="circle"><font color="blue">Estilos en la pagina web</font> : aplicamos el estilo directamente en la pagina con el parametro "style".<br>
+                                    </li></ul>
+                
+                            <p></p>
+                        <h2><font color="#FF7F50">La etiqueta span</font></h2>
+                        <hr color="#FF7F50">
+                        <p>La etiqueta &lt;span&gt; nos permite seleccionar un lboque de texto al que podremos aplicar directamente estilos de CSS.</p>
+                
+                
+                
+                
+                
+                     
+                </body>
+            </div>
+
+            <div id="panel_semanticas" class="panel" hidden>
+				
+                <body>
+                    
+                         <h1><font color="#FF7F50">Etiquetas Semánticas</font></h1>
+                    <hr color="#FF7F50"></hr>
+                         <p><strong><font color="blue">Etiquetas que indican qué es el contenido que contienen, en lugar de cómo se debe formatear al mostrar el documento HTML en un cliente web.</font></strong></p>
+                        
+                    
+                        <h2><font color="#FF7F50">Elemento &lt;header&gt;</font></h2>
+                    <hr color="#FF7F50"></hr>	
+                        <p>Consiste en una etiqueta que define una serie de parrafos para indicar que son la cabecera de la pagina, puede haber mas de uno dentro de una etiqueta <b>body</b>, si se encuentra dentro de una etiqueta <b>article</b> será la cabecera del artículo, no puede formar parte dentro de otra etiqueta <b>header</b> ni dentro del elemento <b>foot</b> ni <b>address</b>
+                        </p>
+                        
+                        <h2><font color="#FF7F50">Elemento &lt;footer&gt;</font></h2>
+                    <hr color="#FF7F50"></hr>
+                        <p>Similar al elemento anterior pero identificando el pie de página dentro del contexto que se encuentre, en el caso que este dentro de <b>body</b> servirá para agrupar un grupo de elementos como pie de página
+                        </p>
+                
+                        <h2><font color="#FF7F50">Elemento &lt;section&gt;</font></h2>
+                    <hr color="#FF7F50"></hr>
+                        <p>Es un elemento que permite en diferentes partes un documento, Aquí un ejemplo:
+                        </br>
+                        <p>
+                        &lt;!DOCTYPE html&gt;</br>
+                        &lt;html lang="es-ES"&gt;</br>
+                        &lt;head&gt;</br>
+                        &lt;meta charset="UTF-8"&gt;</br>
+                        &lt;title>&lt;/title&gt;</br>
+                        &lt;/head&gt;</br>
+                        &lt;body&gt;</br>
+                        &lt;header&gt;</br>
+                        &lt;h1&gt;Historia de HTML&lt;/h1&gt;</br>
+                        &lt;p&gt;Desde 1989 hasta nuestros días&lt;/p&gt;</br>
+                         &lt;/header&gt;</br>
+                         &lt;section&gt;</br>
+                         &lt;h2&gt;Inicios en HTML. Tim Bernes Lee&lt;/h2&gt;</br>
+                         &lt;p&gt;.....&lt;/p&gt;</br>
+                         &lt;/section&gt;</br>
+                         &lt;section&gt;</br>
+                         &lt;h2&gt;Creación de la web. Primeros navegadores&lt;/h2&gt;</br>
+                         &lt;p&gt;.....&lt;/p&gt;</br>
+                         &lt;/section&gt;</br>
+                         &lt;section&gt;</br>
+                         &lt;h2&gt;La guerra de los navegadores&lt;/h2&gt;</br>
+                         &lt;p&gt;.....&lt;/p&gt;</br>
+                         &lt;/section&gt;</br>
+                         &lt;section&gt;</br>
+                         &lt;h2&gt;De HTML 4 a HTML 5 pasando por XHTML&lt;/h2&gt;</br>
+                         &lt;p&gt;...&lt;/p&gt;</br>
+                         &lt;/section&gt;</br>
+                         &lt;footer&gt;</br>
+                         &lt;p&gt;Realizado por Álvaro Alcántara&lt;/p&gt;</br>
+                         &lt;/footer&gt;</br>
+                         &lt;/body&gt;</br>
+                        &lt;/html&gt;</br>
+                                &lt;/p&gt;</br>
+                        </p>
+                        <h2><font color="#FF7F50">Elemento &lt;nav&gt; </font></h2>
+                    <hr color="#FF7F50"></hr>
+                            <p>Este elemento marca el su contenido como una sección de enlaces. Se puede escribir dentro de cualquier elemento (<b>header</b>,<b>footer</b>,<b>section</b>...etc).
+                            </p>
+                        <h2><font color="#FF7F50">Elemento &lt;article&gt; </font></h2>
+                    <hr color="#FF7F50"></hr>
+                        <p>Como podemos ver en etiquetas anteriores HTML sigue un patrón como si fuese un periodico, pues la idea de este elemento es agrupar en su interior contenido que se describa un tema de forma integra.
+                        </p>
+                        <h2><font color="#FF7F50">Elemento &lt;hgroup&gt; </font></h2>
+                    <hr color="#FF7F50"></hr>
+                        <p>Permite agrupar varios títulos (elementos h1 a h6) dentro de esta etiqueta para darles estilo común. Se utiliza dentro de article para marcar su zona de títulos.
+                        </p>
+                        <h2><font color="#FF7F50">Elemento &lt;figure&gt; </font></h2>
+                    <hr color="#FF7F50"></hr>
+                        <p>La idea de esta etiqueta es marcar contenido que tiene imágenes, diagramas, ilustraciones, fotos y ejemplos de código.
+                        </p>
+                        <h2><font color="#FF7F50">Elemento &lt;figcaption&gt; </font></h2>
+                    <hr color="#FF7F50"></hr>
+                        <p>Permite indicar el título de una imagen, dentro de un elemento figure. Un ejemplo de uso podría ser:
+                        </p>
+                            <p>
+                                &lt;article&gt;</br>
+                                &lt;hgroup&gt;</br>
+                                 &lt;h2>Palencia&lt;/h2&gt;</br>
+                                 &lt;h3>Paisajes&lt;/h3&gt;</br>
+                                 &lt;/hgroup&gt;</br>
+                                 &lt;figure&gt;</br>
+                                &lt;img src="montanaPalentina.jpg" alt="Vista de la Montaña Palentina"</br>
+                                width="350" height="400"/&gt;</br>
+                                &lt;figcaption&gt;</br>
+                                Vista de la Montaña Palentina desde Camporredondo</br>
+                                &lt;/figcaption&gt;</br>
+                                &lt;/figure&gt;</br>
+                                &lt;p&gt;</br>
+                                Los paisajes en la provincia de Palencia.......</br>
+                                &lt;/p&gt;</br>
+                                ....</br>
+                </br>
+                                &lt;/article> </br>
+                            </p>
+                        <h2><font color="#FF7F50">Elemento &lt;aside&gt; </font></h2>
+                    <hr color="#FF7F50"></hr>
+                        <p>Permite marcar un texto dentro de un articulo con la finalidad de que permita aclaraciones,referencias, resúmenes remarcados y sobre todo cuadros de texto de estilo
+                periodístico para destacar partes del artículo.
+                        </p>
+                    </body>
+            </div>
+
+            <div id="panel_listas" class="panel" hidden>
+                <body>
+                    <h2><font color="#FF7F50">Listas</font></h2>
+                    <hr color="#FF7F50">
+                    <p>Las listas permiten crear párrafos agrupados y alineados mediante algún tipo de marcador, como puede ser numeros, puntos, ...</p>
+                    <p>Podemos encotrar dos tipos de listas: <strong>ordenadas</strong> y <strong>desordenadas</strong></p>
+                    
+                    
+                    <h3><font color="#FF7F50">Listas desordenas</font></h3>
+                    <hr color="#FF7F50">
+                    <p>Las listas no ordenadas hay que meterlas dentro de la etiqueta <strong>&lt;ul&gt;</strong> <strong>&lt;/ul&gt;</strong></p>
+                    <p>Cada elemento que queramos añadir a la lista tendrá que ir dentro de la etiqueta <strong>&lt;li&gt;</strong> <strong>&lt;/li&gt;</strong>. El punto que marca cada elemento de la lista se puede modificar gracias al atributo <strong>type</strong>, entre los mas relevantes encontramos: </p>.
+                    <ul>
+                        <li type="circle">circle: puntos con el fondo blanco</li>
+                        <li type="square">square: cuadrados</li>
+                        <li type="disc"> disc: Puntos negros</li>
+                    </ul>
+                    <p>Veamos algunos ejemplos:</p>
+                    <p><strong>Type circle</strong></p>
+                    <p>&lt;ul type="circle"&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas&lt;/li&gt;</p>
+                    <p>&lt;/ul&gt;</p>
+                    </br>
+                    <ul type="circle">
+                        <li>Café</li>
+                        <li>Té</li>
+                        <li>Bebidas alcohólicas</li>
+                    </ul>
+                    </br>
+                    <p><strong>Type square</strong></p>
+                    <p>&lt;ul type="square"&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas&lt;/li&gt;</p>
+                    <p>&lt;/ul&gt;</p>
+                    </br>
+                    <ul type="square">
+                        <li>Café</li>
+                        <li>Té</li>
+                        <li>Bebidas alcohólicas</li>
+                    </ul>
+            
+                    
+                    <h3><font color="#FF7F50">Listas ordenadas</font></h3>
+                    <hr color="#FF7F50">
+                    <p>Las listas ordenadas van dentro de las etiquetas <strong>&lt;ol&gt;</strong><strong>&lt;/ol&gt;</strong></p>
+                    <p>Cada punto de la lista se escribe igual que en las listas desordenadas, dentro de la etiqueta <strong>&lt;li&gt;</strong><strong>&lt;/li&gt;</strong> </p>
+                    <p>En las listas ordenadas tenemos distintos tipos de numeración, haciendo referencia con el atributo <strong>type</strong>:</p>
+                    <ul>
+                        <li>a: Para ordenar en letras minúsculas</li>
+                        <li>A: Para ordenar en letras mayúsculas</li>
+                        <li>i: Para ordenar con numeración romana minúscula</li>
+                        <li>I: Para ordenar con numeración romana mayúscula</li>
+                        <li>1: Para ordenar con numeración decimal</li>
+                    </ul>
+                    <p>Veamos algunos ejemplos:</p>
+                    <p><strong>Type a</strong></p>
+                    <p>&lt;ol type="a"&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas&lt;/li&gt;</p>
+                    <p>&lt;/ol&gt;</p>
+                    </br>
+                    <ol type="a">
+                        <li>Café</li>
+                        <li>Té</li>
+                        <li>Bebidas alcohólicas</li>
+                    </ol>
+                    </br>
+                    <p><strong>Type X</strong></p>
+                    <p>&lt;ol type="X"&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas&lt;/li&gt;</p>
+                    <p>&lt;/ol&gt;</p>
+                    </br>
+                    <ol type="X">
+                        <li>Café</li>
+                        <li>Té</li>
+                        <li>Bebidas alcohólicas</li>
+                    </ol>
+                    <p>Si queremos que un elemento concreto de la lista tome un valor determina lo podemos hacer con el atributo <strong>value</strong></p>
+            
+            
+                    <h3><font color="#FF7F50">Listas anidadas</font></h3>
+                    <hr color="#FF7F50">
+                    <p>Podemos hacer una lista dentro de una lista de la siguiente manera:</p>
+                    <p>&lt;ul type="circle"&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Café&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Té&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;li&gt;Bebidas alcohólicas</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul type="square"&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Ginebra&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Ron&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Whisky&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;/li&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;</p>
+                    <p>&lt;/ul&gt;</p>
+                    </br>
+                    <ul type="circle">
+                        <li>Café</li>
+                        <li>Té</li>
+                        <li>Bebidas alcohólicas
+                            <ul type="square">
+                                <li>Ginebra</li>
+                                <li>Ron</li>
+                                <li>Whisky</li>
+                            </ul>
+                        </li>    
+                    </ul>
+                    </br>
+                    
+                    
+                    <h3><font color="#FF7F50">Lista de términos</font></h3>
+                    <hr color="#FF7F50">
+                    <p>Es un tipo de lista que permite crear definiciones para los elementos</p>
+                    <p>Para abrir la lista se realiza con la etiqueta <strong>&lt;dl&gt;</strong> y su cierre. Para cada elemento de la lista lo crearemos con la etiqueta <strong>&lt;dt&gt;</strong> y su cierre. Por último abrimos el comentario de definición con la etiqueta <strong>&lt;dd&gt;</strong> y su cierre correspondiente</p>
+                    <p>&lt;dl&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;dt&gt;ordenador&lt;/dt&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;dd&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Máquina electrónica que, mediante determinados programas, permite almacenar y tratar información, y resolver problemas de diversa índole.</p>
+                    <p>&nbsp;&nbsp;&lt;/dd&gt;</p>
+                    <p>&lt;/dl&gt;</p>
+                    </br>
+                    <dl>
+                        <dt>Ordenador</dt>
+                        <dd>
+                            Máquina electrónica que, mediante determinados programas, permite almacenar y tratar información, y resolver problemas de diversa índole.
+                        </dd>
+                    </dl>
+                </body>
+            </div>
+
+            <div id="panel_tablas" class="panel" hidden>
+				<body>
+                    
+                    <p><h1><font color="#FF7F50">Tablas</font></h1>
+                    <p><font color="blue">Las tablas son elementos fundamentales del HTML, ya que mejora la puesta visual de la página. Son conjuntos de filas
+                        y columnas que muestran el texto y las imágenes que nosotros queramos. Las tablas admiten todo tipo de 
+                        formatos y por tanto nos permite diseñar disposiciones complejas en las páginas.</font></p>
+                        <hr color="#FF7F50">
+                    <h2><font color="#FF7F50">Tablas simples</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Para realizar una tabla simple utilizaremos la etiqueta <i><font color="blue">table</font></i>, con 
+                        la que indicaremos cada fila con <font color="blue"><i>tr</i></font> para realizar una fila y <font color="blue"><i>td</i></font> para realizar una columna.<br>
+                        Con el atributo <font color="blue"><i>border</i></font> podemos modificar el ancho del borde de la tabla.<br>
+                        A continuación realizaremos un ejemplo de tabla : <br></p>
+                        <code>&lt;table border ="1"&gt;<br>
+                                &lt;tr&gt;<br>
+                                &lt;td&gt;c1&lt;/td&gt;<br>
+                                &lt;td&gt;c2&lt;/td&gt;<br>
+                                &lt;td&gt;c3&lt;/td&gt;<br>
+                                &lt;td&gt;c4&lt;/td&gt;<br>
+                                &lt;/tr&gt;<br>
+                                &lt;tr&gt;<br>
+                                &lt;td&gt;c5&lt;/td&gt;<br>
+                                &lt;td&gt;c6&lt;/td&gt;<br>
+                                &lt;td&gt;c7&lt;/td&gt;<br>
+                                &lt;td&gt;c8&lt;/td&gt;<br>
+                                &lt;/tr&gt;<br>
+                                &lt;/table&gt;<br>
+                        </code>
+                        <p> Y quedaria de la siguiente manera : <br>
+                            </p><table border="1">
+                                    <tbody><tr>
+                                        <td>c1</td>
+                                        <td>c2</td>
+                                        <td>c3</td>
+                                        <td>c4</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>c5</td>
+                                        <td>c6</td>
+                                        <td>c7</td>
+                                        <td>c8</td>                            
+                                    </tr>
+                            </tbody></table>
+                        <p></p>
+                    <hr color="#FF7F50">
+                <h2><font color="#FF7F50">Celdas de cabecera</font></h2>
+                    <hr color="#FF7F50">
+                    <p>Las celdas de cabecera son celdas que se crean para describir otras celdas con el atributo <font color="blue"><i>th</i></font></p>
+                    <hr color="#FF7F50">
+                <h2><font color="#FF7F50">Titulos en las tablas</font></h2>
+                    <hr color="#FF7F50">
+                    <p>Se pueden poner títulos en las tablas con la etiqueta <font color="blue"><i>caption</i></font></p> .<br>
+                    Por ejemplo :  &lt;table border ="1"&gt;<br>
+                    &lt;caption&gt;Título&lt;/caption&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;td&gt;c1&lt;/td&gt;<br>
+                    &lt;td&gt;c2&lt;/td&gt;<br>
+                    &lt;td&gt;c3&lt;/td&gt;<br>
+                    &lt;td&gt;c4&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;td&gt;c5&lt;/td&gt;<br>
+                    &lt;td&gt;c6&lt;/td&gt;<br>
+                    &lt;td&gt;c7&lt;/td&gt;<br>
+                    &lt;td&gt;c8&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;/table&gt;<br><br>
+                    y quedaría asi : <br>
+                    <br>
+                    <table border="1">
+                    <caption>Título</caption>
+                    <tbody><tr>
+                            <td>c1</td>
+                            <td>c2</td>
+                            <td>c3</td>
+                            <td>c4</td>                            
+                        </tr>
+                        <tr>
+                            <td>c5</td>
+                            <td>c6</td>
+                            <td>c7</td>
+                            <td>c8</td>                            
+                        </tr>
+                </tbody></table>
+                <p></p>
+                <hr color="#FF7F50">
+             <h2><font color="#FF7F50">Etiquetas de agrupación de elementos en tablas</font></h2>
+             <hr color="#FF7F50">
+             <p>Existen tres elementos que diferencian las tres partes principales de la tabla
+                    </p><ul>
+                            <li type="circle"><font color="blue">thead</font> : Indica las filas que forman la cabecera.<br>
+                            </li><li type="circle"><font color="blue">tfoot</font> : Indica el pie de tabla.<br>
+                            </li><li type="circle"><font color="blue">tbody</font> : Indica el cuerpo de la tabla.<br>
+                    </li></ul>
+             Un ejemplo sería : <br><br>
+             &lt;table border ="1"&gt;<br>
+             &lt;thead&gt;<br>
+             &lt;caption&gt;Título1&lt;/caption&gt;<br>
+             &lt;tr&gt;<br>
+             &lt;td&gt;c1&lt;/td&gt;<br>
+             &lt;td&gt;c2&lt;/td&gt;<br>
+             &lt;/tr&gt;<br>
+             &lt;/thead&gt;<br>
+             &lt;tfoot&gt;<br>
+             &lt;caption&gt;Título3&lt;/caption&gt;<br>
+             &lt;tr&gt;<br>
+             &lt;td&gt;c5&lt;/td&gt;<br>
+             &lt;td&gt;c6&lt;/td&gt;<br>
+             &lt;/tr&gt;<br>
+             &lt;/tfoot&gt;<br>
+             &lt;tbody&gt;<br>
+             &lt;caption&gt;Título2&lt;/caption&gt;<br>
+             &lt;tr&gt;<br>
+             &lt;td&gt;c3&lt;/td&gt;<br>
+             &lt;td&gt;c4&lt;/td&gt;<br>
+             &lt;/tr&gt;<br>
+             &lt;/tbody&gt;<br>
+             &lt;/table&gt;<br><br>
+             <br>
+             y quedaría de esta manera : <br><br>
+             <table border="1">
+                    
+                    <thead>
+                            </thead><caption>Título1</caption>
+                    <tbody><tr>
+                            <td>c1</td>
+                            <td>c2</td>
+                    </tr>
+                    
+                    </tbody><tfoot>
+                            </tfoot><caption>Título2</caption>
+                        <tbody><tr>
+            
+                            <td>c5</td>
+                            <td>c6</td>                                       
+                        </tr>
+                    
+                
+                    </tbody><tbody>
+                            </tbody><caption>Título3</caption>
+                        <tbody><tr>
+                            <td>c3</td>
+                            <td>c4</td>                            
+                        </tr>
+                    </tbody>
+             </table>
+             <p></p>
+             <hr color="#FF7F50">
+              <h2><font color="#FF7F50">Combinación de celdas y tablas dentro de tablas</font></h2>
+              <hr color="#FF7F50">
+              <p>Es posible unir celdas con los atributos <font color="blue"><i>colspan</i></font> y <font color="blue"><i>rowspan</i></font>. <font color="blue"><i>colspan</i></font> une la celda actual con el número de celdas a la derecha
+                que se le haya indicado, mientras que <font color="blue"><i>rowspan</i></font> combina las celdas indicadas hacia abajo.<br>
+                Tambien podemos introducir elementos <font color="blue"><i>table</i></font> dentro de las tablas, lo que nos permite crear tablas de las formas que queramos.
+              </p>
+             </body>
+            </div>
+
+            <div id="panel_cajas" class="panel" hidden>
+				
+                <body>
+                        
+                            <section>
+                            <article>
+                            <h1><font color="#FF7F50"><big><u>El Modelo de Cajas</u></big></h1></font>
+                            <p>&nbsp&nbsp&nbsp&nbspEl modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.</br></br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp 	Cada vez que se inserta una etiqueta HTML, se crea una nueva caja rectangular que encierra los contenidos de ese elemento. La siguiente imagen muestra las tres cajas rectangulares que crean las tres etiquetas HTML que incluye la página:</br></br>
+                            
+                        
+                        &nbsp&nbsp&nbsp&nbsp Los navegadores crean y colocan las cajas de forma automática, pero CSS permite modificar todas sus características. Cada una de las cajas está formada por seis partes, tal y como muestra la siguiente imagen:</p>
+                            </article>
+                        <hr color="#FF7F50"><hr color="#FF7F50">
+                            <article>
+                                <h4><font color="#FF7F50">La etiqueta DIV</font></h4>
+                                    <p>
+                                        &nbsp&nbsp&nbsp&nbspLa etiqueta &lt;div&gt; se emplea para definir un bloque de contenido o sección de la página, para poder aplicarle 					diferentes estilos e incluso para realizar operaciones sobre ese bloque específico.</br></br>
+                        
+                        &nbsp&nbsp&nbsp&nbspEl uso de la etiqueta div es sencillo. Observemos este ejemplo:</br></br>
+                        
+                        &lt;div&gt;</br>
+                        Índice</br>
+                        Página principal</br> 
+                        Material multimedia</br>
+                        Autores</br>
+                        &lt;&#47;
+                        div&gt; </br></br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp Hemos empleado la etiqueta para crear un bloque, que hará las veces de índice de contenidos. Visualmente la etiqueta no provoca ningún cambio, pero en la estructura interna del documento hemos aplicado una división muy importante. Ahora podemos utilizar atributos propios de la clase div para modificar nuestro bloque, o podemos aplicar estilos Css a la caja.
+                                    </p>
+                            </article>
+                        <hr color="#FF7F50"><hr color="#FF7F50">
+                            <article>
+                                <h5><font color="#FF7F50">Propiedades de la etiqueta DIV</font></h5>
+                                <p>
+                                <ul>
+                        
+                                    <li type="circle">Margin (Margen):  <br>&nbsp&nbsp&nbsp&nbsp Separacion de la caja con los otros elementos. Puede ser superior, inferior, lateral derecha e izquierda.</li><br>
+                                    <li type="circle">Border (Borde):  <br>&nbsp&nbsp&nbsp&nbsp Rodea nuestra caja con un borde. Podemos elegir el color y el estilo del borde. Aumenta el tamño de la caja.</li><br>
+                                    <li type="circle">Padding(Relleno): <br>&nbsp&nbsp&nbsp&nbsp Consiste en el espacio que intermedia entre el borde y el contenido. Podríamos interpretarlo como los márgenes  “interiores”. Se controlan los cuatro a la vez, o de forma individualizada.</li><br>
+                                    <li type="circle">Width (Anchura): <br>&nbsp&nbsp&nbsp&nbsp El ancho de nuestra caja. Podemos indicarlo asi width="500 px". Px significa pixel. </li><br>
+                                    <li type="circle">Height (Altura): <br>&nbsp&nbsp&nbsp&nbsp  alto de nuestra caja. Al igual que width, podemos indicar su medida con px.</li><br>
+                                    <li type="circle">Background-image (Imagen de fondo): <br>&nbsp&nbsp&nbsp&nbsp Muestra, como fondo, la imagen a la que se enlace, teniendo en cuenta que rellenará la superficie que abarque tanto el CONTENIDO como el padding, si es que el tamaño de la imagen da para ello. </li><br>
+                                    <li type="circle">Background-color (Color de fondo): <br>&nbsp&nbsp&nbsp&nbsp Muestra, como fondo, el color que se le asigne. Abarca la misma superficie que la imagen de fondo, pero por detrás de ésta si están los dos elementos establecidos. </li>
+                                    <li type="circle">Float (Fluir) <br>&nbsp&nbsp&nbsp&nbsp Indica como tiene que actuar nuestra caja en funcion de las demas, es decir, como deberia "fluir" en la pagina, para poder alinearse  </li><br>
+                        
+                                </ul>
+                                </p>
+                            </article>
+                        
+                        
+                        
+                        <div style="padding: 10px; margin:0 auto; width: 500px;">
+                        <div style="border: 10px solid #6495ED; margin:0 auto; padding: 10px; width:100%;">
+                        <p align="center"><font color="#5F04B4">Ejemplo de un div dentro de otro div</font></p>
+                        </div>
+                        </div>
+                        <div style="background-color:rgb(25, 0, 255);margin: 20px; padding: 0;"><p align="center"><font color="white">un ejemplo con margin</font></p></div>
+                        
+                        <div style="background-color:blue;margin: 0; padding: 20px;"><p align="center"><font color="white">un ejemplo con padding</font></p></div>
+                        
+                            </article>
+                        <hr color="#FF7F50"><hr color="#FF7F50">
+                            <article>
+                                <h4><font color="#FF7F50">La etiqueta SPAN</font></h4>
+                                    <p>
+                        &nbsp&nbsp&nbsp&nbsp El elemento span es un contenedor genérico sin un significado semántico en particular. Es comúnmente usado en la creación de páginas con propósitos estilísticos.El elemento span está diseñado para contener líneas simples de texto únicamente. Para bloques más grandes de contenido usa el elemento div en su lugar.
+                                    </p>
+                            </article>
+                            <article>
+                            <h4><font color="#FF7F50">Diferenciando la etiqueta SPAN y DIV</font></h4>
+                                    <p>
+                                
+                        &nbsp&nbsp&nbsp&nbsp Resumiendo se puede decir que div es un contenedor de bloque, y span es un contenedor de línea. Esto quiere decir que span puede estar insertado en el medio de una línea y en cambio div provocaría un salto de línea en el mismo contexto.</br></br>
+                        &nbsp&nbsp&nbsp&nbsp Adicionalmente, las etiquetas div y span se suelen acompañar de uno o dos parámetros destinados a identificar ese bloque:<br>
+                        <ul>
+                        <li type="circle">id: permite establecer un identificador único para el bloque. Así podremos referirnos al bloque de forma inequívoca.</li>
+                        <li type="circle">class: es similar a id, pero con la ventaja de que se puede repetir; así que podemos tener varios &lt;div&gt; diferentes con la misma clase.</ul>
+                        </li> 
+                        &nbsp&nbsp&nbsp&nbsp Usando id y class podemos diferenciar unos div de otros y así aplicarles estilos CSS diferentes o hacer que actúen de forma distinta. Ambas comparten el atributo align, que sirve para alinearlos dentro de sus respectivas cajas o en la misma hoja. Sin embargo, al ser bastante compleja la fluidez de los elementos dentro de una web, la posicion y el orden la aplicaremos mediante una hoja de estilos.
+                                                    
+                        </p>
+                            </article>
+                        <hr color="#FF7F50"><hr color="#FF7F50">
+                            <article>
+                            <h4><font color="#FF7F50">Maquetando nuestras cajas con estilos</font></h4>
+                                    <p>
+                        &nbsp&nbsp&nbsp&nbsp Es en este apartado donde los atributos id y class toman sentido. Una vez que tengamos la parte estructural de nuestra pagina hecha, tendremos diferentes div que engloben cada apartado y cada uno tendra sus correspondientes id. Mediante estos id, la hoja de estilos sabra a que div tiene que aplicarle las caracteristicas que nosotros definamos.</br>
+                        &nbsp&nbsp&nbsp&nbsp Antes que nada vamos a explicar como se fenie una regla CSS; 
+                                    </p>
+                            </article>
+                            </section>
+                        
+                        </body>
+            </div>
+
+            <div id="panel_formularios" class="panel" hidden>
+				
+                <body>
+                        <h1><font color="#FF7F50">Formularios</font></h2>
+                            <hr color="#FF7F50">
+                        <p>Los <strong>formularios</strong> son un elemento en las páginas web que permiten <strong>recabar información
+                            para enviarla a un servidor</strong> de aplicaciones y que la procese.</p>
+                        
+                        
+                        <h2><font color="#FF7F50">Etiqueta form</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Todo formulario html comienza con una etiqueta <strong>&lt;form&gt;</strong> y su cierre.</p>
+                        <p>Fundamentalmente la etiqueta form posee dos atributos: <strong>action</strong> y <strong>method</strong>.</p>
+                        <dl>
+                            <dt><strong>action</strong></dt>
+                            <dd>
+                                atributo que contiene la URL de la página web o servicios que
+                                procesará los datos del formulario.
+                            </dd>
+                            <dt><strong>method</strong></dt>
+                            <dd>
+                                Permite indicar qué instrucción http utilizaremos para pasar la
+                                información al destino de nuestro formulario. Las opciones habituales son: <strong>GET</strong>
+                                y <strong>POST</strong>. El <strong>GET</strong> genera una cadena de búsqueda en la URL que contiene los datos del
+                                formulario. El POST ,por su parte, pasa los datos pero de forma más oculta.
+                            </dd>
+                        </dl>
+                        <p>De manera que nos quedaría algo tal que así:</p>
+                        <p>&lt;form action="control_form.php" method="GET"&gt;</p>
+                        <p>...........................................................</p>
+                        <p>&lt;/form&gt;</p>
+                
+                        
+                        <h2><font color="#FF7F50">Cuadros de texto</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Los cuadros de texto permiten recoger texto quye escriba el usuario. Su sintaxis es:</p>
+                        <p><strong>&lt;input type="text" name="nombre" /&gt;</strong></p>
+                        <p>Muestra en la página un cuadro en el que el usuario puede introducir texto. Además
+                            podemos utilizar estos atributos: <strong>value</strong> y <strong>id</strong></p>
+                            <dl>
+                                <dt><strong>value</strong></dt>
+                                <dd>
+                                   Da un valor inicial al cuadro y muestra algún tipo de ayuda para su relleno
+                                </dd>
+                                <dt><strong>id</strong></dt>
+                                <dd>
+                                    Es el indentificador del cuadro. Pero a la hora de 
+                                    utilar <strong>PHP</strong> id no sirve, el que sirve es <strong>name</strong>.
+                                </dd>
+                            </dl>
+                        
+                        <p>Ejemplo:</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>&nbsp;&nbsp;Escriba su nombre y apellidos&lt;input type="text" name="nombre value="Maria" /&gt;</p>
+                        <p>&lt;/form>&gt;</p>
+                        
+                        <form action="control_form.php" method="get">
+                            Escriba su nombre y apellidos<input type="text" name="nombre" value="Maria"/>
+                        </form>
+                        <p><strong>Atributos principales para cuadros de texto:</strong></p>
+                        <dl>
+                            <dt><strong>maxlength</strong></dt>
+                            <dd>
+                                Indica el máximo número de caracteres que se le permitirá escribir
+                                a la usuaria o usuario.
+                            </dd>
+                            <dt><strong>size</strong></dt>
+                            <dd>
+                                Anchura, en caracteres, del cuadro de texto. No tiene sentido que sea mayor
+                                que el anterior (sí que sea menor)
+                            </dd>
+                            <dt><strong>value</strong></dt>
+                            <dd>
+                                Permite rellenar el cuadro con un texto inicial
+                            </dd>
+                        </dl>
+                
+                
+                        <h2><font color="#FF7F50">Cuadros de contraseñas</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Funcionan como los cuadros de texto, sólo que el texto que se introduce se oculta. La sintaxis es: </p>
+                        <p><strong>&lt;input type="password" name="nombre" /&gt;</strong></p>
+                        <p>Ejemplo:</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>&nbsp;&nbsp;Escriba contraseña&lt;input type="password" name="nombre /&gt;</p>
+                        <p>&lt;/form>&gt;</p>
+                        <form action="control_form.php" method="get">
+                            Escriba contraseña<input type="password" name="nombre" />
+                        </form>
+                
+                
+                        <h2><font color="#FF7F50">Los botones</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Los botones son controles del formulario.Veamos los diferentes tipos y cuál es su función.</p>
+                        <dl>
+                            <dt><strong>botón de envío, input type="submit"</strong></dt>
+                            <dd>
+                                Sirve para llevar a cabo la comunicación entre el formulario y la página que recoge sus
+                                datos. 
+                            </br>
+                                <strong>&lt;input type="submit" value="texto del botón" /&gt;</strong>
+                            </dd>
+                            <dt><strong>botón de restablecer, input type="reset"</strong></dt>
+                            <dd>
+                                Anula los datos que se han introducidos en los
+                                controles del formulario. Deja todos los controles en su estado inicial.
+                            </br>
+                                <strong>&lt;input type="reset" value="texto del botón" /&gt;</strong>
+                            </dd>
+                            <dt><strong>botón genérico, input type="button"</strong></dt>
+                            <dd>
+                                Se utiliza normalmente para capturar su pulsación y responder en consecuencia.
+                            </br>
+                                <strong>&lt;input type="button" value="texto del botón" /&gt;</strong>
+                            </dd>
+                        </dl>
+                        <p>Veamos un ejemplo:</p>
+                        <p>&lt;input type="reset" value="texto del botón" /&gt;</p>
+                        <input type="reset" value="texto del botón" />
+                
+                
+                        <h2><font color="#FF7F50">Botones de radio</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Se trata de un control fácil de usar que permite elegir una de entre varias opciones. </p>
+                        <p>Veamos su sintaxis con un ejemplo</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;p&gt;Sexo&lt;/p&gt;</p>    
+                        <p>&nbsp;&nbsp;&lt;input type="radio" name="sexo" value="hombre"/&gt;Hombre&lt;br/&gt;</p>
+                        <p>&lt;input type="radio" name="sexo" value="mujer" checked="checked"/&gt;Mujer&lt;br/&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                        <form action="control_form.php" method="get">
+                            <p>Sexo:</p>
+                            <input type="radio" name="sexo" value="hombre"/>Hombre<br />
+                            <input type="radio" name="sexo"
+                           value="mujer" checked="checked"/>Mujer<br />
+                           </form>
+                        <p>El atributo <strong>checked</strong> se utiliza para dejar marcado el botón como predeterminado(solo uno)</p>
+                
+                
+                        <h2><font color="#FF7F50">Casillas de verificación</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Se usan igual que los botones de radio. La diferencia es que el <strong>type</strong> es <strong>checkbox</strong> en lugar de radio.</p>
+                        <p>Ejemplo:</p>
+                        <p>&lt;form action="control_form.php" method="get" /&gt;</p>
+                        <p>&nbsp;&nbsp;Desempleado: Si &lt;input type="checkbox" name="desempleado" value="si" checked="checked"/&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                        <form action="control_form.php" method="get">
+                            Desempleado: Si <input type="checkbox" name="desempleado"
+                            value="Si" checked="checked"/>
+                        </form>
+                
+                
+                        <h2><font color="#FF7F50">Cuadros combinados</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Un cuadro combinado permite el uso de una lista de opciones en la que se puede elegir
+                            la deseada.  Todo cuadro comienza con una etiqueta <strong>select</strong> que es la encargada de dar
+                            <strong>name</strong> al control.  Dentro cada opción del cuadro se indica con una etiqueta
+                            <strong>option</strong> a la que se da valor mediante el atributo <strong>value</strong></p>
+                        <p>Ejemplo:</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;select name="pueblo"&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="ub"&gt;Úbeda&lt;/option&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="sb"&gt;Sabiote&lt;/option&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="tp"&gt;Torreperogil&lt;/option&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;/select&gt;</p>
+                        <p>&lt;/form&gt;</p>   
+                        <form action="control_form.php" method="get">
+                            <select name="pueblo">
+                                <option value="ub">Úbeda</option>
+                                <option value="sb">Sabiote</option>
+                                <option value="tp">Torreperogil</option>
+                            </select>
+                        </form>
+                        <p>Se pueden agrupar opciones dentro del cuadro usando el elemento <strong>optgroup</strong>. Ejemplo:</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;select name="pueblo"&gt;</p>
+                        <p><strong>&nbsp;&nbsp;&lt;optgroup label="Comarca de la loma"&gt;</strong></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="ub"&gt;Úbeda&lt;/option&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="sb"&gt;Sabiote&lt;/option&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="tp"&gt;Torreperogil&lt;/option&gt;</p>
+                        <p><p>&nbsp;&nbsp;&lt;/optgroup&gt;</p></p>
+                        <p>&nbsp;&nbsp;&lt;/select&gt;</p>
+                        <p>&lt;/form&gt;</p>   
+                        
+                        <form action="control_form.php" method="get">
+                            <select name="pueblo">
+                            <optgroup label="Comarca de la loma">
+                                <option value="ub">Úbeda</option>
+                                <option value="sb">Sabiote</option>
+                                <option value="tp">Torreperogil</option>
+                             </optgroup>
+                            </select>
+                        </form>
+                
+                
+                        <h2><font color="#FF7F50">Cuadro de selección de archivo</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Cuando se usa <strong>type="file"</strong> en una etiqueta input, entonces aparece un botón que al
+                           pulsarle hace aparecer un cuadro de selección de archivos mediante el cual podremos
+                           elegir un archivo.Ejemplo:</p>
+                        <p>&lt;form action="recogida1.php" method="get"&gt;</p>   
+                        <p>Elija un archivo</p>   
+                        <p>&nbsp;&nbsp;&lt;input type="file" name="archivo" /&gt;</p>        
+                        <p>&nbsp;&nbsp;&lt;input type="submit" value="enviar"/&gt;&lt;br/&gt;</p>
+                        <p>&lt;/form&gt; </p>   
+                        <form action="recogida1.php" method="get">
+                            Elija un archivo
+                            <input type="file" name="archivo" />
+                            <input type="submit" value="enviar"/><br/>
+                        </form> 
+                
+                
+                        <h2><font color="#FF7F50">Cuadro de texto multilinea</font></h2>
+                        <hr color="#FF7F50">
+                        <p>La etiqueta <strong>textarea</strong> permite coloca un cuadro de texto de varias líneas para que el
+                            usuario puede introducir un texto largo. Para caracterizar ese cuadro están los atributos 
+                            <strong>rows</strong> ( altura en líneas de texto del cuadro) y <strong>cols</strong>
+                            (la anchura en caracteres) </p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>   
+                        <p>Escriba un texto descriptivo &lt;br/&gt;</p>   
+                        <p>&nbsp;&nbsp;&lt;textarea rows="10" cols="40" name="texto"&gt;&lt;textarea&gt;&lt;br/&gt;</p>        
+                        <p>&nbsp;&nbsp;&lt;input type="submit" value="enviar"/&gt;&lt;br/&gt;</p>
+                        <p>&lt;/form&gt; </p> 
+                        <form action="control_form.php" method="get">
+                            Escriba un texto descriptivo <br/>
+                            <textarea rows="10" cols="40" name="texto"></textarea><br/>
+                            <input type="submit" value="enviar"/><br/>
+                        </form>
+                
+                        <h2><font color="#FF7F50">Agrupación de controles, fieldset</font></h2>
+                        <hr color="#FF7F50">
+                        <p>La etiqueta <strong>fieldset</strong> permite agrupar controles para que visualmente sea más cómodo el
+                           relleno de los controles. Inmediatamente después va la etiqueta <strong>legend</strong>
+                           que contiene el texto que encabezará al grupo de controles. </p>
+                        <p>Ejemplo</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>   
+                        <p>&nbsp;&nbsp;&lt;fieldset&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;legend&gt;Poblacion&lt;/legend&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;select name="pueblo"&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;optgroup label="Comarca de la loma"&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="ub"&gt;Úbeda&lt;/option&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="sb"&gt;Sabiote&lt;/option&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="tp"&gt;Torreperogil&lt;/option&gt;</p>
+                        <p><p>&nbsp;&nbsp;&lt;/optgroup&gt;</p></p>
+                        <p>&nbsp;&nbsp;&lt;/select&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;/fieldset&gt;</p>
+                        <p>&lt;/form&gt; </p>
+                        <form action="control_form.php" method="get">
+                            <fieldset>
+                                <legend>Poblacion</legend>
+                                    <select name="pueblo">
+                                        <optgroup label="Comarca de la loma">
+                                            <option value="ub">Úbeda</option>
+                                            <option value="sb">Sabiote</option>
+                                            <option value="tp">Torreperogil</option>
+                                        </optgroup>
+                                    </select>
+                            </fieldset>
+                        </form>
+                
+                
+                        <h2><font color="#FF7F50">Controles de HTML5</font></h2>
+                        <hr color="#FF7F50">
+                        <p><strong>cuadros de texto especializados</strong></p>
+                        <ul type="square">
+                                <li><strong>input type="number"</strong>:Acepta sólo números. El atributo maxlength permite indicar un valor máximo para el cuadro</li>
+                                <li><strong>input type="email"</strong>: Acepta sólo direcciones de correo electrónico</li>
+                                <li><strong>input type="url"</strong>: Acepta solo direcciones url</li>
+                                <li><strong>input type="date"</strong>: acepta solo fechas</li>
+                                <li><strong>input type="time"</strong>: acepta solo horas validas</li>
+                                <li><strong>input type="datetime"</strong>: acepta fecha y hora</li>
+                                <li><strong>input type="month"</strong>: acepta solo numeros del 1 al 12 refiriendose a los meses</li>
+                                <li><strong>input type="search"</strong>: presenta un cuadro de texto pensado para hacer búsquedas</li>
+                                <li><strong>input type="tel"</strong>: para introducir números de tlfn.</li>
+                                <li><strong>input type="range"</strong>: presenta un control para elegir valores en un rango. Los atributos max y min establecen el rango máximo y mínimo del control; el atributo  step indica cuánto se mueve el control</li>
+                                <li><strong>input type="color"</strong>: Presenta un control de selección de colores. El color se
+                                    toma en formato #xxxxxx donde cada x es una cifra hexadecimal.</li>
+                        </ul>
+                        </br>
+                        <p><strong>etiquetado de controles</strong></p>
+                        <p>En lugar de poner la información de los controles poniendo texto directamente, se
+                                recomienda usar la etiqueta label que utiliza un atributo for que sirve para asociar el
+                                texto interno a la etiqueta label respecto al nombre del control que se indica con el
+                                atributo for.</p>
+                        </br>
+                        <p><strong>datalist</strong></p>
+                        <p>alist
+                                No hay muchos navegadores que acepten esta etiqueta, pero es muy potente permite
+                                añadir entradas a un control de cuadro de texto (y también a cuadros especializados
+                                como los de email, url,….). La forma de usar consiste en usar el atributo HTML5 list
+                                existente en la etiqueta input. Ese atributo asociará el cuadro de texto a la lista de
+                                valores. Luego dentro de datalist se colocan etiquetas option para cada opción en la
+                                lista. </p>
+                        </br>
+                        <p><strong>atributo required</strong></p>
+                        <p>Este atributo obliga a rellenar con algún valor el control en el que se usa</p>
+                        </br>
+                        <p><strong>atributo multiple</strong></p>
+                        <p>Permite en los cuadros de entrada de texto que el usuario pueda indicar varios valores
+                                si les separa con comas.</p>
+                        
+                        </br>
+                        <p><strong>atributo pattern</strong></p>
+                        <p>Permite colocar una expresión regular en un cuadro de texto que, obligatoriamente,
+                                tendrá que cumplir el cuadro en el que se use el atributo</p>
+                        </br>
+                        <p><strong>atributo placeholder</strong></p>
+                        <p>Un placeholder es un texto que ayuda a rellenar un cuadro de un formulario </p>
+                        </br>
+                        <p><strong>atributo autocomplete</strong></p>
+                        <p>Permite activar (valor on) o desactivar (valor off) el autocompletado del navegador</p>
+                        </br>
+                        <p><strong>atributos min,max y range</strong></p>
+                        <p>Son atributos que se pueden utilizar en muchos tipos de cuadros (number, date, time,
+                                range,..) que almacenan valores numéricos o similares. min y max establecen los
+                                límites del cuadro. </p>
+                    </body>
+            </div>
+
+            <div id="panel_enlaces" class="panel" hidden>
+				
+                <body>
+                        <a id="principio">   
+                                <h1><font color="#FF7F50">URLs</font></h1>
+                                <p><strong>Una URL es una dirección concreta de un recurso en internet. Cada una de estas URLs son únicas, por tanto si la ULR es correcta, solo se podrá dirigir a un recurso</strong></p>
+                                <p></p><h3><font color="#FF7F50">Los elementos necesarios para crear una URL son :</font></h3>
+                                <h2><font color="#FF7F50">El Protocolo</font></h2>
+                                <hr color="#FF7F50"> 
+                                Son los primeros caracteres del URL, y dependiendo del tipo de los mismos, representan distintos recursos. Algunos ejemplos son <br>
+                                <ul>
+                                    <li type="circle"><font color="blue">http://</font>(para recursos de la web)<br>
+                                    </li><li type="circle"><font color="blue">https://</font>(para recursos de la web contenidos en un servidor seguro)<br>
+                                    </li><li type="circle"><font color="blue">ftp://</font>(recursos contenidos en un servidor de ficheros)<br>
+                                    </li></ul>
+                                    <hr color="#FF7F50">
+                                <h2><font color="#FF7F50">Servidor</font></h2>
+                                <hr color="#FF7F50">
+                                Nombre completo que tiene en internet el servidor que aloja el recurso al que queremos acceder. Ejemplo: https://www.iesvirgendelcarmen.com<br>
+                                <hr color="#FF7F50">
+                                <h2><font color="#FF7F50">Puerto</font></h2>
+                                <hr color="#FF7F50">
+                                Puerto por el que se debe conectar con el servidor para obtener el recurso. Si no estuviese indicado se usaria el de por defecto, que seria 80 en el caso de https. Para indicar el puerto específico se indica poniendo ":" e indicando el numero tras escribir el servidor.<br>
+                                <hr color="#FF7F50">
+                                <h2><font color="#FF7F50">Ruta</font></h2>
+                                <hr color="#FF7F50">
+                                <p>Indica el recorrido que debemos hacer para llegar al recurso deseado. Ej:</p>
+                                <ul>
+                                    <li type="circle"><font color="blue">/index.html&gt;</font>Accede a la pagina raiz del servidor.</li>
+                                    <li type="circle"><font color="blue">/documentos/imagenes/imagenPrueba.jgp</font> accederia a imagenPrueba.jpg dentro de las susodichas carpetas</li>
+                                </ul>
+                                <hr color="#FF7F50">
+                                <h2><font color="#FF7F50">Cadenas de Búsqueda</font></h2>
+                                <hr color="#FF7F50">
+                                <p>Son parametros que son enviados a paginas que pueden recibir los mismos, como PHP o ASP.<br>
+                                
+                                    Por ejemplo: ?pagina=6&amp;idioma=en, nos indica que la página es la numero 6 y el idioma definido es ingles.<br>
+                                    <font color="blue">Es importante tener en cuenta que los URL solo pueden estar formados por caracteres en codigo ASCII, si esto no fuese asi, habria que codificarlos.</font>
+                                </p>
+                                <hr color="#FF7F50">
+                                <h2><font color="#FF7F50">Creando enlaces en HTML5</font></h2>
+                                <hr color="#FF7F50">
+                                </a><p><a id="principio"> Dentro de una página web se pueden colocar enlaces que permitan abrir una url cuando hacemos click, para eso usaremos la etiqueta &lt;a&gt;, dentro de la misma
+                                        el atributo href permite
+                                        indicar la URL a la que se realiza el salto.<br>
+                                    seria de la siguiente manera:   &lt;a href="https://www.reddit.com/r/YasuoMains/"&gt;Ejemplo&lt;/a&gt;<br>
+                                    y funcionaria tal que asi : </a><a href="https://www.reddit.com/r/YasuoMains/">Ejemplo</a></p>
+                                
+                                <hr color="#FF7F50">
+                                <h2><font color="#FF7F50">Enlaces Internos</font></h2>
+                                <hr color="#FF7F50">
+                                <p>Existe un tipo de enlace que nos permite acceder a distintas partes de nuestra propia pagina, se trata de la etiqueta id, que, aplicada junto a la etiqueta &lt;a&gt;, nos permite marcar una 
+                                   posición en nuestra pagina a la que poder acceder usando href="nombre_id".<br>
+                                   Por ejemplo, hemos colocado un enlace con id al principio de esta página, que llamaremos "principio", de la siguiente manera : &lt;a id="principio"/&gt; y la podremos llamar usando
+                                   &lt;a href="#principio"&gt; <br>
+                                   quedaria de este modo : <a href="#principio">ir al principio</a>
+                                </p>
+                                
+                                
+                                
+                                </div>
+                                
+                                
+                                </body>
+                </body>
+            </div>
+
+            <div id="panel_multimedia" class="panel" hidden>
+				
+                <body>
+                        <h1><font color="#FF7F50">Multimedia</font></h1>
+                        <br/><br/>
+                        <h2><font color="#FF7F50">Problemas multimedia</font></h2>
+                        <hr color="#FF7F50">
+                        <p>El problema que hay con los elementos multimedia es que hay diferentes formatos de video y 
+                            audio y cada navegador tiene capacidades distintas. Para solucionar este problema hay que
+                            instalar pluings(extesiones) para que el navegador pueda ejecutar los elementos multimedia</p>
+                        
+                
+                        <h2><font color="#FF7F50">Etiqueta &lt;embed&gt;</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Es una etiqueta que se utiliza para agregar elementos no pertenecientes al lenguaje html5
+                            tales como flash,video, audio, etc.
+                        </p>
+                        <p><strong>atributos:</strong></p>
+                        <ul type="square">
+                            <li><strong>src</strong>: URL al recurso que se desea mostrar</li>
+                            <li><strong>type</strong>: Tipo MIME que indica el contenido del recurso que 
+                                se incorpora con la etiqueta.</li>
+                            <li><strong>height</strong>: Altura de la ventana que mostrará el recurso</li>
+                            <li><strong>width</strong>: Anchura de la ventana que mostrará el recurso</li>
+                        </ul>
+                
+                
+                        <h2><font color="#FF7F50">Etiqueta &lt;object&gt;</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Esta etiqueta está pensada para <strong>sustituir</strong> a la etiqueta <strong>&lt;embed&gt;</strong>
+                            Permite incorporar cualquier tipo de contenido a una página web.
+                        </p>        
+                        <p><strong>atributos:</strong></p>
+                        <ul type="square">
+                                <li><strong>data</strong>:URL al recurso que se desea mostrar</li>
+                                <li><strong>type</strong>:Tipo MIME que indica el contenido del recurso que se incorpora con la 
+                                    etiqueta. </li>
+                                <li><strong>height</strong>: Altura de la ventana que mostrará el recurso</li>
+                                <li><strong>width</strong>: Anchura de la ventana que mostrará el recurso</li>
+                                <li><strong>usemap</strong>: Permite  indicar  el  nombre  de    un  mapa  de  imágenes  
+                                    (usando #nombre) que actuará sobre el objeto.
+                                </li>
+                                <li><strong>name</strong>: nombre del objeto</li>
+                                <li><strong>form</strong>: Indica el nombre del formulario al que pertenece este objeto</li>
+                        </ul>
+                
+                
+                        <h2><font color="#FF7F50">>Elemento &lt;param&gt;</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Elemento  interior  a 
+                            <strong>object</strong>
+                            ,  que  permite  especificar  <strong>parámetros</strong>  a  los  plugins  de  los 
+                            navegadores encargados de mostrar el objeto.
+                        </p>
+                        <p>Através del param pasamos instrucciones al pluin para que reproduzca al objeto 
+                            mediante los atributos <strong>name</strong> (en el que se indica el nombre del atributo) y <strong>value</strong>
+                            (valor del atributo)
+                        </p>
+                        <p>Ejemplo:</p>
+                        <p><strong>&lt;object data="Wildlife.wmv" type="video/x-ms-wmv" width="500" height="300"&gt;</strong></p>
+                        <p><strong>&nbsp;&nbsp;&lt;param name="autoplay" value="true"/&gt;</strong></p>
+                        <p><strong>&lt;/object&gt;</strong></p>
+                
+                
+                        <h2><font color="#FF7F50">Elemento &lt;iframe&gt;</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Sirve para colocar un documento dentro de otro documento.</p>
+                        <p><strong>atributos:</strong></p>
+                        <ul type="square">
+                            <li><strong>src</strong>:URL al recurso que se desea mostrar</li>
+                            <li><strong>width</strong>: Anchura del objeto en nuestra página</li>
+                            <li><strong>height</strong>: Altura de la ventana que mostrará el recurso</li>
+                        </ul>
+                        
+                
+                        <h2><font color="#FF7F50">Elemento &lt;elemento video&gt;</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Sólo funciona en HTML 5 y es el método propuesto para incorporar vídeos a una página web.</p>
+                        <p><strong>atributos</strong></p>
+                        <ul type="square">
+                            <li><strong>src</strong>:URL al recurso que se desea mostrar</li>
+                            <li><strong>width</strong>: Anchura del objeto en nuestra página</li>
+                            <li><strong>height</strong>: Altura de la ventana que mostrará el recurso</li>
+                            <li><strong>autoplay</strong>: El  vídeo  se  inicia automáticamente en cuanto se descargue</li>
+                            <li><strong>loop</strong>: el vídeo se ejecuta automáticamente una y otra vez</li>
+                            <li><strong>controls</strong>: Indica que el vídeo mostrará los controles de reproducción</li>
+                            <li><strong>preload</strong>: Recomendación sobre cómo debemos realizar la descarga.
+                                Opciones: <strong>auto</strong> (El vídeo se descarga en cuanto se carga la página); 
+                                <strong>none</strong> (El  vídeo  no  se  descarga. Cuando el usuario pulse play, se 
+                                descargará); <strong>metadata</strong> (Descarga los metadatos del vídeo, no el vídeo en sí)
+                            </li>
+                            <li><strong>poster</strong>: Permite indicar la dirección URL a una  imagen que se mostrará 
+                                mientras  el  vídeo  no  se  está  reproduciendo</li>
+                        </ul>
+                        <p><strong>Codecs de vídeo.Elemento source</strong></p>
+                        <p>Es el software  que  se  usa  para crear  los vídeos. Un vídeo actual usa un formato comprimido de datos, por lo que para crearlos se 
+                            codifican los datos y para mostrarle, se descodifica.</p>
+                        <p>Eso  significa  que  para  ver  un  vídeo  en  un  formato  concreto,  se  necesita  el  códec 
+                            apropiado. El elemento <strong>source</strong> dispone de dos atributos: 
+                                <strong>src</strong> para indicar la URL que nos lleva al vídeo y 
+                                <strong>type</strong> que indica el tipo MIME del vídeo,donde se  pue
+                                den indicar los codecs concretos que necesitamos para decodificar el 
+                                vídeo.
+                        </p>
+                        <p>El concepto es el siguiente:</p>
+                        <p>&lt;video autoplay="autoplay" controls="controls" poster="foto1.jpg"&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4;<strong>codecs='avc1.42E01E, mp40a.40.2'</strong> "/&gt;</p>
+                        <p>&nbsp;&nbsp;&lt;source src="video.ogv" type="video/ogg;<strong>codecs='theora, vorbis'</strong> "/&gt;</p>
+                        <p>El navegador no lo puede mostrar</p>
+                        <p>&lt;/video&gt;</p>
+                        <p>Dentro de type, el uso de codecs es  opcional,  ya  que  si  el  navegador  no  reconoce  el 
+                            formato  no  suele  hacer  caso  a  los codecs que  se  indiquen. La idea es que si el primer formato no se reconoce
+                            se  intenta  el  segundo  y  así  sucesivamente.  Si  ninguno  es  reproducible  por  el 
+                            navegador actual, éste mostrará la frase final tras el último source.
+                        </p>
+                        <p><strong>Subtítulos</strong></p>
+                        <p> Hay una etiqueta que se coloca dentro del elemento
+                            video que sirve para indicar subtítulos. Se trata de track. Sus atributos son:
+                        </p>
+                        <ul type="square">
+                            <li><strong>src</strong>: URL al archivo VTT o SRT que contiene los subtítulos</li>
+                            <li><strong>kind:</strong> Tipo de subtítulos:
+                                <ul type="circle">
+                                    <li>subtitles : Subtítulos normales.</li>
+                                    <li>captions : igual que subtitles pero se le pueden añadir sonidos también</li>
+                                    <li>descriptions : texto alternativo a la película.</li>
+                                    <li>chapters: contine los capítulos que permite navegar de forma ágil por la película.</li>
+                                    <li>metadata: metadatos de la película.</li>
+                                </ul>
+                            </li>
+                            <li><strong>label</strong>: Nombre de los subtítulos para reconocerlos. </li>
+                            <li><strong>srclang</strong>: Idioma de los subtítulos.</li>
+                        </ul>
+                
+                        
+                        <h2><font color="#FF7F50">Elemento audio</font></h2>
+                        <hr color="#FF7F50">
+                        <p>Sirve para incorporar sonidos a nuestra página</p>
+                        <p>Atributos</p>
+                        <ul type="square">
+                            <li><strong>src</strong>: URL al vídeo que se desea mostrar</li>
+                            <li><strong>autoplay</strong>: El video se inicia automaticamente cuando se descarga.</li>
+                            <li><strong>loop</strong>: vídeo se ejecuta automáticamente una y otra vez</li>
+                            <li><strong>controls</strong>: el vídeo mostrará los controles de reproducción.</li>
+                            <li><strong>preload</strong> recomendación de cómo debemos realizar la descarga.Posibilidades:
+                                <ul type="circle">
+                                    <li>auto :  El vídeo se descarga en cuanto se carga la página</li>
+                                    <li>none : El vídeo no se descarga. Cuando el usuario pulse play, se descargará.</li>
+                                    <li>metadata: . Descarga los metadatos del vídeo, no el vídeo en sí</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Con el audio hay el mismo problema con la cuestión de los codecs y los formatos, por lo
+                            que también es habitual convertir el audio a distintos formatos y dar opciones dentro de
+                            la etiqueta audio gracias a la etiqueta source. Ejemplo:
+                        </p>
+                        <p><strong>&lt;audio controls="controls" autoplay="autoplay"&gt;</strong></p>
+                        <p><strong>&nbsp;&nbsp;&lt;source src="audio1.ogg" type="audio/ogg"&gt;</strong></p>
+                        <p><strong>&nbsp;&nbsp;&lt;source src="audio2.mp3" type="audio/mpeg"&gt;</strong></p>
+                        <p><strong>&nbsp;&nbsp;No se puede reproducir el archivo de audio</strong></p>
+                        <p><strong>&lt;/audio&gt;</strong></p>
+                
+                           
+                </body>
+            </div>
+
+            <div id="panel_canvas" class="panel" hidden>
+				
+                <body>
+                   
+                    <h1><font color="#FF7F50">Elemento &lt;canvas&gt;</font></h1>
+                    <hr color="#FF7F50"></hr>
+                    <p><strong><font color="blue">Es uno de los elementos más famosos de HTML5 ya que ha supuesto un gran aporte al dinamismo de las paginas web debido a su similitud al elemento &lt;img&gt; solo que cambiando ciertos aspectos, gracias a este elemento dispondremos de un área donde se podrá "dibujar" mediante JavaScript, gracias a esto se han podido desarrollar animaciones, videojuegos...etc que hacen mas llamativas las páginas web
+                    </font></strong></p>
+                   
+                     <h2><font color="#FF7F50">Atributos de las canvas</font></h2>
+                    <hr color="#FF7F50"></hr>
+                       <p> El elemento &lt;canvas&gt;  puede ser estilizado como a cualquier imagen normal (margin, border, background, etc). Estas reglas, sin embargo, no afectan a lo dibujado sobre el elemento &lt;canvas&gt;. Cuando no tenemos reglas de estilo aplicadas al elemento &lt;canvas&gt;, este será completamente transparente. A continuación definiremos los atributos de las canvas :
+                       </p>
+                          <ul>
+                               <li type="square"><font color="blue">Id</font> : Es el atributo que utilizan todos los elementos HTML para identificarles. En el caso de canvas es casi obligatorio su uso para poder hacer referencia al mismo.<br/>
+                               <li type="square"><font color="blue">Width</font> : Indica la anchura en pixeles del elemento &lt;canvas&gt; funcionando igual que en el caso de &lt;img&gt;.<br/>
+                               <li type="square"><font color="blue">Height</font> : Indica la altura en pixeles que va a tener el elemento &lt;canvas&gt;.<br/>
+                               </ul>
+                    <h2><font color="#FF7F50">El contexto de renderización</font></h2>
+                     <hr color="#FF7F50"></hr>
+                   <p> El elemento &lt;canvas&gt;  crea un lienzo de dibujo fijado que expone uno o mas contextos renderizados, los cuales son usados para crear y manipular el contenido mostrado (en este caso nos enfocaremos en el renderizado de contextos 2D)
+                   </p>
+                   <p>El elemento &lt;canvas&gt; parte en blanco, para mostrar alguna cosa, un script primero necesita acceder al contexto a renderizar y dibujar sobre este. El elemento  &lt;canvas&gt; tiene un method llamado  getContext(), usado para obtener el contexto a renderizar y sus funciones de dibujo. getContext() toma un parametro, el tipo de contexto.
+                   Aquí un ejemplo:</br>
+                   </br>
+                   var canvas = document.getElementById('Canva');</br>
+                   var ctx = canvas.getContext('2d');</br>
+                   </br>
+                   La primera linea regresa el nodo DOM para el elemento &lt;canvas&gt; llamando al metodo  document.getElementById(). Una vez tu tienes el elemento nodo, tu puedes acceder al contexto de dibujo usando su metodo getContext().
+                   </p>
+                   <h2><font color="#FF7F50">Ejemplo de uso de &lt;canvas&gt; usando JavaScript:
+                   </font></h2>
+                    <hr color="#FF7F50"></hr>
+                   <p>Mediante la etiqueta script podemos colocar código en lenguaje JavaScript, desde ese
+                   código podemos utilizar el elemento &lt;canvas&gt; para "dibujar".
+                   </p>
+                   <p>
+                   &lt;canvas id="lienzo1" width="600" height="400" /&gt;</br>
+                   &lt;script type="text/javascript"&gt;</br>
+                       var canvas=document.getElementById("lienzo1");</br>
+                       var contexto=canvas.getContext("2d");</br>
+                       contexto.lineWidth=2;</br>
+                       for(i=0;i&lt;=600;i+=20){</br>
+                           contexto.moveTo(0,0);</br>
+                           contexto.lineTo(i,400)</br>
+                           contexto.stroke();</br>
+                       }</br>
+                       &lt;/script&gt;tablas</br>
+                   </p>
+                   <p>El resultado de dicho código será esta imagen:
+                   </p>
+                   <img src="imagenes/Canva.png" />
+           
+                </body>
+            </div>
+
+            <div id="panel_WCAG" class="panel" hidden>
+				
+                <body>
+                        <section>
+                        <article>
+                            <h1><font color="#FF7F50"><u><big>Accesibilidad Web</big></u></h1></font>
+                    <p>&nbsp&nbsp&nbsp&nbsp La accesibilidad web tiene como objetivo lograr que las páginas web sean utilizables por el máximo número de personas, independientemente de sus conocimientos o capacidades personales e independientemente de las características técnicas del equipo utilizado para acceder a la Web.
+                    
+                    La necesidad de que la Web sea universal y accesible por cualquier persona está presente desde el principio de la Web, ya que era un requisito contemplado en su diseño por su creador Tim Berners-Lee: <br><br>
+                    &nbsp&nbsp&nbsp&nbspEn la actualidad, no existe una definición formal y totalmente aceptada del concepto de accesibilidad web. En este sitio web puedes encontrar varias definiciones que existen. También puedes leer una pequeña introducción donde se explica que la Web ofrece oportunidades sin precedentes a las personas con discapacidad, pero si no se lleva cuidado, la falta de accesibilidad creará graves barreras que impedirán su uso.<br><br>
+                    
+                    &nbsp&nbsp&nbsp&nbsp Además, también existen una serie de mitos sobre la accesibilidad web que perduran desde hace años. Estos mitos se pueden resumir en que la accesibilidad web es cara y supone un coste extra en el desarrollo de un sitio web, sin que los beneficios sean importantes. Además, otro de los mitos que perdura es creer que la accesibilidad web sólo beneficia a las personas con discapacidad. Los beneficiarios de la accesibilidad web son todo el mundo.
+                    
+                    Para lograr la accesibilidad, se han desarrollado diferentes pautas o guías que explican cómo se tienen que crear las páginas web para que sean accesibles.</font></p>
+                        
+                        </article>
+                    <hr color="#FF7F50"><hr color="#FF7F50">
+                        <article>
+                    <h4><font color="#FF7F50"><big><u>WCAG 1.0</u></big></font></h4>
+                        <p>&nbsp&nbsp&nbsp&nbspLa versión 1.0 de las Pautas de Accesibilidad al Contenido en la Web (Web Content Accessibility Guidelines 1.0) fue un avance importante para lograr que Internet sea más accesible para las personas con discapacidad. Finalizadas en 1999, las WCAG 1.0 proporcionaban 14 directrices y numerosos puntos de control que podían utilizarse para determinar la accesibilidad de una página web. Proporcionaban tres prioridades, niveles de cumplimiento o niveles de adecuación (la medida en que una página web cumple las directrices). La Prioridad 1 o Nivel de adecuación A era un requisito básico para que algunos grupos de usuarios pudieran usar el contenido web. La Prioridad 2 o Nivel de adecuación AA indicaba una mejor accesibilidad y la eliminación de importantes barreras de acceso al contenido. La Prioridad 3 o Nivel de adecuación AAA proporcionaba mejoras a la accesibilidad del contenido web. WCAG 1.0 estaba muy centrado en HTML. También fue el principal recurso a partir del cual las pautas de la Section 508 se elaboraron. Esto se explicara mas detalladamente a continuación.<br><br>
+                    
+                    <hr color="#FF7F50">
+                    
+                    <h5>Pautas WCAG 1.0</font></h5>
+                    
+                    &nbsp&nbsp&nbsp&nbsp Las Pautas de Accesibilidad al Contenido en la Web 1.0 (WCAG 1.0) se publicaron el 5 de mayo de 1999. Contienen 14 pautas que constituyen los principios generales para el diseño accesible.
+                    
+                    Aunque en la actualidad han sido sustituidas por las WCAG 2.0, en la legislación española siguen estando vigentes a través de la Norma UNE 12803:2004.
+                    
+                    Para el empresario es importante conocer y entender la importancia de la aplicación de estas pautas. Su uso y aplicación le permitirá cumplir con la legislación vigente.<br><br>
+                    
+                    <ul>
+                    <li> <b>Pauta 1:</b> "Proporcione alternativas equivalentes para el contenido visual y auditivo"
+                    Es importante que los contenidos que no sean textuales se complementen con textos equivalentes. El fin de dicha pauta es que el texto equivalente pueda ser interpretado por lectores de pantalla. </li><br>
+                    <li> <b>Pauta 2:</b> "No se base sólo en el color"
+                    Hay que asegurarse de que los textos y gráficos son comprensibles cuando se ven sin color. Una Web debe verse correctamente por personas que no pueden diferenciar entre algunos colores, en pantallas monocromáticas, o en dispositivos de salida no visuales. </li><br>
+                    <li> <b>Pauta 3:</b> "Utilice marcadores y hojas de estilo y hágalo apropiadamente".
+                    Se debe separar el contenido y la presentación Web. Debe realizarse una estructuración correcta del texto, utilizar los marcadores en HTML (encabezados, listas, tablas, citas, etc.). La maquetación y el formateado de contenidos debe realizarse utilizando CSS. </li><br>
+                    <li> <b>Pauta 4:</b> "Identifique el idioma usado"
+                    Cuando se especifica un cambio de idioma en un documento, los sintetizadores de voz y los dispositivos braille pueden cambiar de forma automática de idioma. De esta forma el documento es accesible en múltiples lenguajes. </li><br>
+                    <li> <b>Pauta 5:</b>: "Cree tablas que se transformen correctamente"
+                    No se debe utilizar tablas para fines que no estén justificados. El uso abusivo de tablas puede crear dificultades para los usuarios de lectores de pantalla. </li><br>
+                    <li> <b>Pauta 6</b> "Asegúrese de que las páginas que incorporen nuevas tecnologías se transformen correctamente"
+                    Aunque se pretende que se utilicen las nuevas tecnologías, y se superen los problemas que éstas presenten, también es importante que las páginas funcionen con los navegadores más antiguos.</li><br>
+                    <li><b>Pauta 7:</b> "Asegure al usuario el control sobre los cambios de los contenidos tempo-dependientes"
+                    Hay que asegurar que los objetos o páginas que se mueven, se desplazan, parpadean o se actualizan automáticamente pueden ser detenidos o parados.<br> Las personas con problemas cognitivos o visuales pueden tener problemas para leer textos que se mueven con rapidez y los lectores de pantalla son incapaces de leer textos móviles. </li><br>
+                    <li> <b>Pauta 8:</b> "Asegure la accesibilidad directa de las interfaces incrustadas"
+                    Cuando un objeto incrustado tiene su "propia interfaz", ésta (al igual que la interfaz de un navegador) debe ser accesible. Si la interfaz del objeto incrustado no puede hacerse accesible, debe proporcionarse una solución alternativa accesible. </li><br>
+                    <li> <b>Pauta 9:</b> "Diseñe para la independencia del dispositivo" El usuario debe poder elegir los dispositivos de entrada y de salida adecuados a sus necesidades (ratones, teclados, punteros de cabeza, dispositivo de voz, etc.) </li><br>
+                    <li> <b>Pauta 10:</b> "Utilice soluciones provisionales"
+                    Se pueden utilizar soluciones de accesibilidad provisionales para que las ayudas técnicas y los antiguos navegadores funcionen de forma correcta.</li><br>
+                    <li> <b>Pauta 11:</b> "Utilice las tecnologías y pautas W3C"
+                    Se recomienda utilizar tecnologías W3C (que cumplan con las especificaciones W3C) y donde sea imposible hacerlo se deben proporcionar versiones alternativas del contenido que sean accesibles.</li><br>
+                    <li> <b>Pauta 12:</b> "Proporcione información de contexto y orientación"
+                    Las relaciones complejas entre las partes de una página pueden resultar difíciles de interpretar a personas con problemas cognitivos o visuales. </li><br>
+                    <li> <b>Pauta 13:</b> "Proporcione mecanismos claros de navegación"
+                    Utilizar mecanismos de navegación como barras de navegación, mapas del sitio, buscadores, etc. ayuda a que se encuentre la información en la página Web. </li><br>
+                    <li> <b>Pauta 14:</b> "Asegúrese de que los documentos sean claros y simples"
+                    Se debe usar un lenguaje claro y simple, con diseños que puedan ser entendidos de forma fácil por el usuario.</li>
+                    </ul><hr color="#FF7F50">
+                    <h5>Niveles WCAG 1.0</font></h5>
+                    &nbsp&nbsp&nbsp&nbsp Las Pautas de Accesibilidad al Contenido en la Web (WCAG) contienen una serie de prioridades (o niveles de prioridad) que son un conjunto de puntos de verificación que describen cómo aplicar esa pauta a las características propias
+                    
+                    Cada punto de verificación está asignado a uno de los tres niveles de prioridad establecidos por las pautas, y se indica el grado en que afecta el incumplimiento de dicho punto a la accesibilidad del sitio Web.<br><br>
+                    <ul>
+                    <li><b>Prioridad 1:</b> son aquellos puntos se tienen que cumplir. Es un requisito básico, ciertos grupos de usuarios no podrán acceder a la información del sitio Web si no se cumple dicha prioridad.</li><br>
+                    <li><b>Prioridad 2:</b> son aquellos puntos que se deberían cumplir ya que, si no fuese así, sería muy difícil acceder a la información para ciertos grupos de usuarios.</li><br>
+                    <li><b>Prioridad 3:</b> son aquellos puntos que se deberían cumplir. De no cumplirse algunos usuarios tendrían dificultades para acceder a la información.
+                    Los niveles de prioridad están contenidos unos dentro de otros. Así la Prioridad 1 está incluida dentro de la Prioridad 2 y ésta a su vez forma parte de la Prioridad 3.</li><br>
+                    </ul>
+                    Según estos puntos de verificación se establecen los siguientes niveles de conformidad:
+                    <ul>
+                    <li><b>Nivel de Conformidad "A":</b> se satisfacen todos los puntos de verificación de prioridad 1.</li>
+                    <li><b>Nivel de Conformidad "AA" (Doble A):</b> Se satisfacen todos los puntos de verificación de las prioridades 1 y 2.</li>
+                    <li><b>Nivel de Conformidad "AAA" (Triple A):</b> Se satisfacen todos los puntos de verificación de las prioridades 1, 2 y 3.</li> </ul>
+                    Según esta clasificación, el nivel de prioridad 1 es el nivel mínimo exigible a una página Web accesible. Las páginas que cumplen el nivel de prioridad 3 son las que más se ajustan al estándar establecido por la WAI, por lo tanto, las que menos problemas de accesibilidad presentan
+                    
+                    
+                    </font></p>
+                        </article><hr color="#FF7F50"><hr color="#FF7F50">
+                        <article>
+                    <h4><font color="#FF7F50"><u><big>WCAG 2.0</big></u></h4></font>
+                        <p>&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp Con el paso del tiempo, las WCAG 1.0 comenzaron a mostrar su antigüedad. Conforme las tecnologías web y las tecnologías para las personas con discapacidad avanzaron, la adecuación se hizo más difíciles, ya que algunos puntos de control se volvieron menos importantes y más difícil de verificar. Por ello se inició el desarrollo de las WCAG 2.0.<br><br>
+                    <hr color="#FF7F50">
+                    <h5><font color="#FF7F50"></font>Pautas WCAG 2.0</font></h5>
+                    &nbsp&nbsp&nbsp&nbspEl W3C (WAI) publicó las Pautas WCAG 2.0 en diciembre de 2008. Han sido desarrolladas para adaptarse a los cambios tecnológicos que se han ido produciendo en los últimos años. A diferencia de las WCAG 1.0, desarrolladas exclusivamente para tecnologías html y CSS, las nuevas pautas son de aplicación en cualquier tecnología.<br> <br>
+                    
+                    &nbsp&nbsp&nbsp&nbspEl W3C recomienda que los contenidos nuevos y actualizados apliquen las Pautas 2.0 y que las políticas de accesibilidad hagan referencia a las nuevas, aunque sigue siendo posible la conformidad con las Pautas 1.0.<br><br>
+                    
+                    &nbsp&nbsp&nbsp&nbspCon el fin de cubrir todas las necesidades, las WCAG 2.0 organizan los documentos en distintos niveles:
+                    <ul><li><b>Principios fundamentales:</b> es el nivel más alto. Aquí se sitúan cuatro principios que proporcionan los fundamentos de accesibilidad Web: perceptibilidad, operabilidad, comprensibilidad y robustez.</li><br>
+                    <li><b>Pautas generales:</b> situadas por debajo de los principios. Son doce y proporcionan los objetivos básicos que se deben lograr para crear un contenido accesible.</li><br>
+                    <li><b>Criterios de éxito:</b> criterios de éxito verificables que permiten emplear las Pautas 2.0</li><br>
+                    <li><b>Técnicas:</b> se pueden aplicar para cada una de las pautas y criterios de éxito.</li><br>
+                    </ul>
+                    
+                    &nbsp&nbsp&nbsp&nbsp Todos estos documentos se aplican de forma conjunta para crear un sitio Web más accesible.
+                    
+                    Los 4 principios básicos o fundamentales en los que se organizan las Pautas WCAG 2.0 son:<br><br>	
+                    <ol type="1" start="1">
+                    <li><b>Perceptibilidad:</b></li><br>
+                    
+                    "La información y los elementos de la interfaz de usuario deben ser presentados a los usuarios de forma que ellos puedan percibirlos."<br>
+                    
+                    Dentro de este principio se recogen 4 Pautas:<br><br>
+                    
+                    <ul><li><b>Pauta 1.1: </b>Alternativas textuales. Se deben proporcionar alternativas textuales para cualquier contenido no textual.</li>
+                    <li><b>Pauta 1.2:</b> Alternativa para multimedia tempo-dependientes. Se deben proporcionar alternativas para el contenido multimedia basado en el tiempo.</li>
+                    <li><b>Pauta 1.3:</b> Adaptable. El contenido se debe crear de varias formas pero sin perder información o estructura.</li>
+                    <li><b>Pauta 1.4:</b> Distinguible (vista y oído). Se debe facilitar a los usuarios el ver y escuchar el contenido.</li></ul><br>
+                    
+                    <li><b>Operatibilidad:</b></li><br>
+                    
+                    "Los componentes de la interfaz y la navegación deben ser operables."
+                    
+                    Dentro de este principio se recogen 4 Pautas:<br><br>
+                    
+                    <ul><li><b>Pauta 2.1: Acceso mediante teclado.</b> Toda la funcionalidad debe estar disponible desde el teclado.</li>
+                    <li><b>Pauta 2.2:</b> Suficiente tiempo. La información debe permanecer durante suficiente tiempo para leer y usar el contenido.</li>
+                    <li><b>Pauta 2.3:</b> Destellos No se debe diseñar con formas que puedan provocar ataques epilépticos.</li>
+                    <li><b>Pauta 2.4:</b> Navegable Se debe proporcionar a los usuarios medios que ayuden a navegar, localizar el contenido y determinar dónde se encuentran.</li></ul><br>
+                    <li><b>Comprensibilidad:</b></li><br>
+                    
+                    "La información y el manejo de la interfaz de usuario debe ser comprensible"<br><br>
+                    
+                    <ul><li><b>Pauta 3.1: Legible y entendible.</b> El contenido debe ser legible y comprensible.</li>
+                    <li><b>Pauta 3.2: Predecible.</b> La apariencia y la operabilidad de las páginas Web deben ser predecibles.</li>
+                    <li><b>Pauta 3.3: Ayuda a la entrada de datos.</b> Se debe ayudar a los usuarios a evitar y corregir los errores.</li></ul><br>
+                    <li><b>Robustez:</b><br><br>
+                    
+                    "El contenido debe ser suficientemente robusto para que pueda ser interpretado por una amplia variedad de agentes de usuario, incluyendo los productos de apoyo"<br><br>
+                    
+                    <ul><li><b>Pauta 4.1: Compatible:</b> La compatibilidad con los agentes de usuario debe ser máxima (tanto con los actuales como con los futuros).</li></ul>
+                    
+                    
+                    </ol>
+                        
+                    <hr color="#FF7F50">
+                    <h5><font color="#FF7F50">Niveles WCAG 2.0</font></h5>
+                    
+                    &nbsp&nbsp&nbsp&nbsp Cada Pauta WCAG 2.0 se desarrolla en una serie de criterios de éxito. En total se han definido 60 criterios de éxito, o puntos de comprobación o verificación que determinan el nivel de accesibilidad (A, AA, AAA).<br><br>
+                    
+                    &nbsp&nbsp&nbsp&nbspLos criterios de éxito están ordenados según su nivel de cumplimiento asociado (A, AA y AAA). Para que una página Web sea conforme con las Pautas WCAG 2.0 debe satisfacer todos y cada uno de sus requisitos de conformidad:
+                    <ul>
+                    <li><b>Nivel de Conformidad "A":</b> Se satisfacen todos los puntos de verificación de prioridad 1.</li><br>
+                    <li><b>Nivel de Conformidad "AA" (Doble A):</b> Se satisfacen todos los puntos de verificación de las prioridades 1 y 2.</li><br>
+                    <li><b>Nivel de Conformidad "AAA" (Triple A):</b> Se satisfacen todos los puntos de verificación de las prioridades 1, 2 y 3.</li><br></ul>
+                    &nbsp&nbsp&nbsp&nbsp Cuando una página cumple con las Pautas WCAG 2.0 puede incluir en ella una Declaración que indique a los usuarios que cumple con el W3C.
+                    
+                    El nivel de conformidad alcanzado se representa mediante un logotipo.
+                    
+                    Logo de nivel de conformidad A.Logo de nivel de conformidad AA.Logo de nivel de conformidad AAA.
+                    Si se utiliza algunos de los sellos anteriores, éste debe ir acompañado por la siguiente información:
+                    <ol type="1" start="1">
+                    <li>Fecha en que se revisó dicho cumplimiento.
+                    <li>Título, versión y URI de las Pautas WCAG 2.0.</li>
+                    <li>Nivel de conformidad alcanzado (A, AA o AAA)</li>
+                    <li>Alcance: enumeración precisa de las páginas que cumplen con las Pautas WCAG 2.0.</li>
+                    <li>Listado de las tecnologías de las que depende el contenido.</li>
+                    <li>La conformidad (y el nivel de conformidad) solo se aplica a páginas Web completas, y no se puede lograr si se excluye parte de la página Web</li></ol>
+                        </font></p>
+                    <hr color="#FF7F50"><hr color="#FF7F50">
+                        </article>
+                        <article>
+                    <p><font color="#FF7F50"><h4><font color="#FF7F50"><u><big>Diferencias entre WCAG 1.0 Y WCAG 2.0</big></u></font></font></h4>
+                    &nbsp&nbsp&nbsp&nbspLas WCAG 2.0 mejoran las WCAG 1.0 y se consideran los referentes definitivos en accesibilidad Web. Por este motivo el conocimiento y adopción de esta versión de las pautas por parte de las empresas es de vital importancia de cara a un posicionamiento para un futuro, siendo una necesidad para mejorar la competitividad.<br><br>
+                    
+                    &nbsp&nbsp&nbsp&nbspEn España las WCAG 1.0 a través de la Norma UNE 139803:2004 son obligatorias a través del Real Decreto 1494/2007. Se cree que en poco tiempo dicha Norma será actualizada para adaptarla a las WCAG 2.0, convirtiéndose de esta forma en un requisito legal. Por este motivo, desde su aparición se aconseja adoptarlas.<br><br>
+                    
+                    &nbsp&nbsp&nbsp&nbspDesde el año 2008 se aconseja la aplicación de estas normas por encima de las WCAG 1.0 con el fin de evitar una doble inversión en accesibilidad por parte de las empresas.
+                    
+                    </font></p>
+                        </article>
+                        </section>
+                </body>
+            </div>
+
+            <div id="panel_legales" class="panel" hidden>
+				
+                    <body>
+                        
+                            
+                        
+                        
+                            <h1><font color="#FF7F50">Requisitos Legales</font></h1>
+                            <hr color="#FF7F50">
+                            <p></p>
+                            En 2007, se publica la Ley 56/2007, de Medidas de Impulso de
+                            la Sociedad de la Información, en la que se revisa, actualiza y amplía el
+                            contenido de la disposición adicional quinta referida a la accesibilidad de las
+                            páginas de Internet (LSSICE) con tres apartados:<br><br>
+                            <ul>
+                            <li><font color="blue">Las Administraciones Públicas promoverán medidas de sensibilización,
+                            educación y formación sobre accesibilidad con objeto de
+                            promover que los titulares de otras páginas de Internet incorporen
+                            los criterios de accesibilidad.<br><br></font></li>
+                    
+                            <li><font color="blue">Los incumplimientos de las obligaciones de accesibilidad estarán
+                            sometidos al régimen de infracciones y sanciones vigente en materia
+                            de igualdad de oportunidades, no discriminación y accesibilidad
+                            universal de las personas con discapacidad.<br><br></font></li>
+                    
+                            <li><font color="blue">Las páginas de Internet de las empresas que presten servicios al
+                            público en general de especial trascendencia económica deberán
+                            satisfacer a partir del 31 de diciembre de 2008 el nivel medio de los
+                            criterios de accesibilidad al contenido generalmente reconocidos.<br><br></font></li><br>
+                            
+                            En su artículo 2, la ley especifica la obligación de disponer de un medio
+                            de interlocución telemática para la prestación de servicios al público de
+                            especial trascendencia económica a todas las empresas que agrupen a más de
+                            cien trabajadores o que tengan un volumen anual de operaciones mayor que
+                            6.010.121,04, y que además pertenezcan a alguno de los siguientes sectores:<br><br><br>
+                            <ul>
+                            <li type="circle"><font color="blue"> Servicios de comunicaciones electrónicas</font></li>
+                            <li type="circle"><font color="blue"> Servicios financieros: bancos, inversiones, seguros, planes de pensiones,…</font></li>
+                            <li type="circle"><font color="blue"> Suministro de agua a consumidores</font></li>
+                            <li type="circle"><font color="blue"> Suministro de gas a consumidores</font></li>
+                            <li type="circle"><font color="blue">Suministro eléctrico a consumidores</font></li>
+                            <li type="circle"><font color="blue">Agencias de viajes</font></li>
+                            <li type="circle"><font color="blue">Servicios de transporte de viajeros</font></li>
+                            <li type="circle"><font color="blue">Comercio al por menor</font></li>
+                           </ul>
+                           
+                            <h1><font color="#FF7F50">Sanciones</font></h1>
+                            <hr color="#FF7F50">
+                            <p>
+                                En 2007 se publica la Ley 49/2007, de régimen de infracciones y sanciones
+                                en materia de igualdad de oportunidades, no discriminación y accesibilidad
+                                universal de las personas con discapacidad , en la que se especifica que <strong><font color="blue">el
+                                objeto de las infracciones serán aquellas acciones y omisiones que ocasionen
+                                vulneraciones del derecho a la igualdad de oportunidades, no discriminación y
+                                accesibilidad, discriminaciones, acosos, incumplimientos de las exigencias de
+                                accesibilidad</font></strong>,…<br>
+                    
+                                Se establecen asimismo diferentes tipos de infracciones, con distintos grados
+                                en función de la falta cometida y la reincidencia. En la siguiente tabla se resumen
+                                los rangos de los importes de dichas sanciones (en euros) según infracción y
+                                grado.<br><br><br><br><br>
+                    
+                                <table border="1">
+                                    <caption><i>Sanciones segun infracción y grado</i></caption>
+                                    <tbody><tr>
+                                        <td></td>
+                                        <td><font color="blue">Mínimo</font></td>
+                                        <td><font color="blue">Medio</font></td>
+                                        <td><font color="blue">Máximo</font></td>   
+                                    </tr>
+                                    <tr>
+                                        <td><font color="#FF7F50">Leves</font></td>
+                                        <td>301 - 6000</td>
+                                        <td>6,001 – 18,000</td>
+                                        <td>18,001 – 30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><font color="#FF7F50">Graves</font></td>
+                                        <td>30,000 – 60,000</td>
+                                        <td>60,001 – 78,000</td>
+                                        <td>78,001 – 90,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><font color="#FF7F50">Muy graves</font></td>
+                                        <td>90,001 – 300,000</td>
+                                        <td>300,001 – 600,000</td>
+                                        <td>600,001 – 1,000,000</td>
+                                    </tr>
+                                </tbody></table>
+                            </p>
+                        
+                    </ul>
+                     </body>
+            </div>
+
+            <div id="panel_ayuda" class="panel" hidden>
+                
+                <body>
+                        <h2><font color="blue">Manual de usuario</font></h2>
+                        Navegar por esta web es bastante sencillo, tan solo haz click en el icono de la esquina izquierda de la página para visualizar el menú desplegable, desde el, podras acceder a cada uno de los apartados de esta página con 
+                        comodidad y rapidez, desde el equipo de desarrollo deseamos que esta página resulte tan instructiva para ti como el crearla ha sido para nosotros.
+                </body>
+            </div>
+             <div id="panel_creditos" class="panel" hidden>
+                <h2><font color="blue">Creadores de la aplicacion</font></h2><br/>
+                <p> Pedro Sánchez Garrido<br/>
+                    Alvaro Alcántara Garcia<br/>
+                    Javier Hidalgo Frias<br/>
+                    Raúl Galiana Carmona<br/>
+                    
+            </div>
+            <div id="panel_error" class="panel" hidden>
+                <h3>Errores vistos y en proceso de corrección</h3>
+                <body>&gt;Hay un error por el cual no se muestran debidamente las tablas, posiblemente provocado por materialize, estamos investigando como solucionarlo.<br/>
+                &gt;En el apartado enlances el texto se muestra de un color que no es el adecuado, se desconoce el motivo pero puede estar relacionado con algun &lt;font&gt; sin cerrar o algun error del CSS.</body>
+
+            </div>
+            
+        </div>
+    </body>
+</html>
